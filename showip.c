@@ -45,6 +45,7 @@ int main(int argc, char* argv[]) {
 		inet_ntop(p->ai_family, addr, ipstr, sizeof ipstr);
 		printf(" %s: %s\n",ipver, ipstr);
 	}
+
 	freeaddrinfo(res);
 
 	return 0;
